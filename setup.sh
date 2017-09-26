@@ -4,3 +4,4 @@ apt-get install openjdk-8-jdk-headless
 apt-get install openjdk-8-jdk
 apt-get install apktool
 apt-get install zipalign
+apt-get install metasploit-framrwork
