@@ -1,6 +1,6 @@
-sudo apt-get install openjdk-8-jre-headless
-sudo apt-get install openjdk-8-jre
-sudo apt-get install openjdk-8-jdk-headless
-sudo apt-get install openjdk-8-jdk
-sudo apt-get install apktool
-sudo apt-get install zipalign
+sudo apt-get install openjdk-8-jre-headless -y
+sudo apt-get install openjdk-8-jre -y
+sudo apt-get install openjdk-8-jdk-headless -y
+sudo apt-get install openjdk-8-jdk -y
+sudo apt-get install apktool -y
+sudo apt-get install zipalign -y
